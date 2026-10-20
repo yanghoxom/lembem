@@ -30,15 +30,15 @@ The legal and team details below were provided by the repository owner for publi
 
 - **AgriSense Open Initiative:** Active Community Deployment; https://agrisense.lembem.com
 - **VietBioNet Dataset:** Open Access Dataset (CC BY-NC 4.0); https://lab.lembem.com/datasets/vietbionet
-- **EcoModel-VN:** MIT-licensed Open-Source Public Beta; https://github.com/yanghoxom/ecomodel-vn
+- **EcoModel-VN:** In Development · Private. No publicly accessible source code or repository link.
 
-At the time of publication, the **EcoModel-VN GitHub repository URL returned 404** to the connected GitHub account. The project's user-provided link is preserved; ensure that the repository exists and is public. The VietBioNet webpage is a catalogue landing page: no underlying dataset files have been supplied or committed to this repository. Data access is directed to the research contact.
+The VietBioNet page has a **research access request form** and a conditional acknowledgement modal. It does not contain the actual dataset files. The EcoModel-VN repository remains intentionally private during development.
 
 ## Repo structure
 
 - `index.html` — landing page with mission, pillars, initiatives, governance, publications, dataset anchor, support and contact
 - `governance.html` — registration details, roles and public-benefit commitments
-- `datasets/vietbionet/index.html` — dataset overview and CC BY-NC 4.0 notice
+- `datasets/vietbionet/index.html` — dataset overview, access request form, delivery confirmation modal and CC BY-NC 4.0 notice
 - `privacy.html` — privacy notice
 - `terms.html` — website terms
 - `CONTENT-LICENSE.md` — original website content licence
@@ -52,4 +52,12 @@ The site is already configured for GitHub Pages from `main` and uses the custom 
 
 ## Licensing and third-party assets
 
-Original website text is designated CC BY-NC 4.0 unless otherwise noted. VietBioNet is designated CC BY-NC 4.0, and EcoModel-VN is designated MIT. These terms do **not** automatically extend to third-party images, fonts, logos, or source code that may be governed by different rights. The hero background and logo have been retained from the site's current design.
+Original website text is designated CC BY-NC 4.0 unless otherwise noted. VietBioNet is designated CC BY-NC 4.0. EcoModel-VN remains private; its licence will be announced on release. These terms do **not** automatically extend to third-party images, fonts, logos, or source code that may be governed by different rights. The hero background and logo have been retained from the site's current design.
+
+## VietBioNet access request form
+
+The request form sends submitted name, email, optional institution and research purpose to `https://formsubmit.co/ajax/contact@lembem.com`, using JSON POST and a same-page confirmation modal. The modal opens **only** if the provider returns `success: true` or `success: "true"`; FormSubmit can respond with `success: "false"` even on HTTP 200. Failed/activation-pending submissions show an error instead of claiming successful delivery.
+
+**Important one-time setup:** FormSubmit requires the owner of `contact@lembem.com` to activate the destination email by clicking the verification link sent by FormSubmit when the first request is submitted. Until activation, delivery is not confirmed and the UI offers direct email contact. This has not been activated or test-submitted by the site editor. See [FormSubmit's documentation](https://formsubmit.co/documentation).
+
+The form's collected personal information is described in `privacy.html`. FormSubmit is an external processor; website visitors must tick a consent checkbox. The form has a honeypot field for spam prevention. To replace FormSubmit with an in-house API or an existing organization endpoint, update the `action` URL in `datasets/vietbionet/index.html`.
