@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+<title id="title">LEMBEM LAB — emerging media, bioinformatics and engineering models</title>
+<desc id="desc">Cool-blue scientific research landscape with a luminous globe, DNA helix, computational networks, topographic data and research facility, leaving open negative space for headline on the left.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" x2="1" y1=".1" y2=".9"><stop stop-color="#E9F8FF"/><stop offset=".42" stop-color="#BDE4F4"/><stop offset=".76" stop-color="#4C9CB9"/><stop offset="1" stop-color="#123F65"/></linearGradient>
+  <linearGradient id="ocean" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#73C5DA"/><stop offset=".55" stop-color="#227A9D"/><stop offset="1" stop-color="#0A3655"/></linearGradient>
+  <radialGradient id="orb"><stop stop-color="#A6F3FF" stop-opacity=".65"/><stop offset=".6" stop-color="#50BDD8" stop-opacity=".18"/><stop offset="1" stop-color="#0E4166" stop-opacity="0"/></radialGradient>
+  <linearGradient id="plate" x1="0" x2="1"><stop stop-color="#0E4364" stop-opacity=".06"/><stop offset=".75" stop-color="#032E4D" stop-opacity=".64"/><stop offset="1" stop-color="#061D37" stop-opacity=".9"/></linearGradient>
+  <linearGradient id="glass" x1="0" x2="1"><stop stop-color="#E8FCFF" stop-opacity=".63"/><stop offset=".7" stop-color="#3DA7C5" stop-opacity=".2"/><stop offset="1" stop-color="#0D5076" stop-opacity=".6"/></linearGradient>
+  <pattern id="grid" width="62" height="62" patternUnits="userSpaceOnUse"><path d="M62 0H0V62" fill="none" stroke="#2C9BC2" stroke-width="1" opacity=".15"/></pattern>
+  <pattern id="smallgrid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#A5F0FF" stroke-width=".55" opacity=".15"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+  <clipPath id="globeclip"><circle cx="1470" cy="360" r="277"/></clipPath>
+  <g id="node"><circle r="6" fill="#D9FAFF"/><circle r="15" fill="#7BDDFA" opacity=".18"/></g>
+</defs>
+<rect width="1920" height="1080" fill="url(#sky)"/>
+<circle cx="1572" cy="334" r="600" fill="url(#orb)"/>
+<rect width="1920" height="1080" fill="url(#grid)" opacity=".6"/>
+<g opacity=".42" fill="#E9FBFF"><path d="M0 577Q208 546 372 574T720 569T1135 578L1130 720H0Z"/><path d="M-100 633Q173 591 380 622T789 610T1255 626L1248 792H-100Z" opacity=".6"/></g>
+<path d="M0 690Q150 658 270 691T553 699T827 672T1189 691T1595 675T1920 704V1080H0Z" fill="url(#ocean)"/>
+<path d="M0 704Q132 678 234 697T445 690T664 711T1057 695T1379 699T1920 708" fill="none" stroke="#D4F9FF" opacity=".4" stroke-width="4"/>
+<!-- Landscape ridges and environmental engineering contours -->
+<g fill="#165775" opacity=".55"><path d="M220 706L382 551L459 592L518 523L629 706Z"/><path d="M525 710L670 522L750 618L818 545L936 710Z"/><path d="M841 713L1029 533L1103 610L1203 502L1348 716Z"/><path d="M1242 712L1402 540L1471 584L1617 468L1766 715Z"/></g>
+<g stroke="#8AEAF0" fill="none" stroke-width="2" opacity=".29"><path d="M0 798Q348 722 748 832T1641 798T2020 846"/><path d="M0 834Q390 755 780 862T1650 837T2020 886"/><path d="M0 870Q391 781 781 895T1650 869T2020 931"/><path d="M0 909Q391 819 781 932T1650 915T2020 962"/><path d="M0 951Q391 852 781 970T1650 961T2020 1005"/></g>
+<g stroke="#C8F8FF" opacity=".25" fill="none"><path d="M555 744C708 668 921 686 1116 764S1503 840 1920 737" stroke-width="6"/><path d="M500 747C708 720 925 722 1178 798S1522 887 1920 785" stroke-width="2"/></g>
+<!-- Glass observatory on right -->
+<path d="M1240 720L1920 590V1080H1162Z" fill="url(#plate)"/>
+<path d="M1278 718L1920 574V608L1290 756Z" fill="#DCF8FF" opacity=".58"/>
+<path d="M1354 772L1920 647V653L1360 783Z" fill="#91EAF4" opacity=".7"/>
+<g stroke="#B8F5FF" stroke-width="4" opacity=".5"><path d="M1448 689L1459 1040"/><path d="M1636 651L1643 1077"/><path d="M1829 611L1835 1077"/></g>
+<path d="M1224 760L1920 609V1080H1224Z" fill="url(#glass)" opacity=".25"/>
+<!-- Globe -->
+<circle cx="1470" cy="360" r="282" fill="#0B5B85" opacity=".13"/>
+<circle cx="1470" cy="360" r="277" fill="none" stroke="#B5F7FF" stroke-width="4" opacity=".76"/>
+<g clip-path="url(#globeclip)" fill="none" stroke="#AEF8FF" opacity=".34" stroke-width="2">
+ <ellipse cx="1470" cy="360" rx="110" ry="278"/><ellipse cx="1470" cy="360" rx="207" ry="278"/>
+ <path d="M1193 360H1747M1206 292H1734M1207 425H1734M1250 223H1690M1250 500H1690"/>
+ <circle cx="1470" cy="360" r="237" stroke-dasharray="12 14"/>
+</g>
+<g clip-path="url(#globeclip)" fill="#A8EDF5" opacity=".21">
+ <path d="M1488 142L1525 163L1556 211L1557 244L1614 252L1643 297L1627 323L1658 342L1625 379L1584 387L1564 419L1542 438L1493 409L1466 374L1428 365L1409 335L1380 328L1387 299L1433 277L1441 244L1478 216Z"/>
+ <path d="M1436 400L1474 420L1480 469L1460 510L1450 578L1426 570L1415 521L1390 487L1401 447Z"/>
+ <path d="M1664 401L1710 414L1737 450L1747 479L1694 482L1663 446Z"/>
+</g>
+<circle cx="1470" cy="360" r="315" fill="none" stroke="#7CE8FF" stroke-width="2" opacity=".15" stroke-dasharray="10 12"/>
+<!-- DNA and computational links -->
+<g transform="translate(1010 100) rotate(-17 140 370)" fill="none" stroke-linecap="round">
+<path d="M100 0C310 100-85 250 110 390S300 580 105 800" stroke="#D4FDFF" stroke-width="8" opacity=".88"/>
+<path d="M170 0C-40 100 370 250 175 390S-10 580 180 800" stroke="#19C2DF" stroke-width="8" opacity=".76"/>
+<g stroke="#80EEFA" stroke-width="4" opacity=".78">
+<path d="M108 50L168 50"/><path d="M139 100L130 100"/><path d="M168 150L110 150"/><path d="M178 200L100 200"/><path d="M140 250L140 250"/><path d="M108 300L170 300"/><path d="M98 350L180 350"/><path d="M135 400L143 400"/><path d="M170 450L110 450"/><path d="M180 500L100 500"/><path d="M140 550L137 550"/><path d="M105 600L175 600"/><path d="M100 650L178 650"/><path d="M140 700L137 700"/><path d="M170 750L105 750"/></g></g>
+<g fill="none" stroke="#C7F9FF" stroke-width="3" opacity=".42">
+<path d="M975 249L1128 205L1229 323L1370 240"/><path d="M936 410L1074 373L1223 513L1417 436L1560 512"/><path d="M1002 574L1173 641L1367 566L1531 629"/>
+</g>
+<g fill="#8FEFFC" opacity=".95"><circle cx="975" cy="249" r="6"/><circle cx="1128" cy="205" r="5"/><circle cx="1229" cy="323" r="8"/><circle cx="936" cy="410" r="7"/><circle cx="1074" cy="373" r="4"/><circle cx="1223" cy="513" r="6"/><circle cx="1002" cy="574" r="5"/><circle cx="1173" cy="641" r="7"/></g>
+<!-- dashboard-inspired transparent scientific modules -->
+<g transform="translate(1455 746)">
+<rect width="345" height="220" rx="18" fill="#092F50" opacity=".86" stroke="#6BE2F0" stroke-width="3"/>
+<rect x="15" y="20" width="315" height="180" fill="url(#smallgrid)" opacity=".7"/>
+<path d="M30 160L72 133L108 149L144 92L182 118L222 72L270 90L312 36" fill="none" stroke="#5CE0F5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#A9F8FF"><circle cx="72" cy="133" r="5"/><circle cx="144" cy="92" r="5"/><circle cx="222" cy="72" r="5"/><circle cx="312" cy="36" r="5"/></g>
+</g>
+<g transform="translate(1270 835)">
+<rect width="157" height="155" rx="14" fill="#0A4163" fill-opacity=".84" stroke="#9AEFFC" stroke-width="2"/>
+<circle cx="76" cy="73" r="46" fill="none" stroke="#5ACFE6" stroke-width="3"/>
+<path d="M30 76L50 42L77 89L102 42L121 77" fill="none" stroke="#B9F7FF" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- Left-side high-contrast reading veil, no text in image -->
+<rect width="1180" height="1080" fill="url(#plate)" opacity=".01"/>
+<rect x="0" y="0" width="1040" height="1080" fill="#F0F9FE" opacity=".22"/>
+</svg>
