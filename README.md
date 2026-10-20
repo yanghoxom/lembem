@@ -24,7 +24,7 @@ This site is plain HTML and uses Tailwind via CDN. No build step is required. En
 - Donation-acceptance eligibility, institutional bank account
 - A legal organizational charter and actual non-distribution restrictions
 
-The homepage hero contains the requested "Registered Non-Profit..." marketing line; it is **not independently verified** by these source repositories. Do not construe it as evidence of registration.
+The hero describes the non-profit research initiative without asserting confirmed registration; statutory status is not independently verified by these repositories.
 
 The AgriSense source site describes an early-stage concept. This version does not label it a completed community deployment.
 
