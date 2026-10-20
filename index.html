@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+
+<title>LEMBEM LAB — Open Science & Public-Benefit Research</title>
+<meta name="description" content="LEMBEM LAB advances open computational models, bio-informatics data and sustainable engineering research for communities in Vietnam."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f7",
+                        "on-secondary-fixed-variant": "#603f33",
+                        "surface-container-highest": "#e3e2e6",
+                        "surface-dim": "#dbd9dd",
+                        "surface": "#faf9fd",
+                        "tertiary": "#805600",
+                        "on-surface-variant": "#3e4a3e",
+                        "tertiary-fixed": "#ffddb0",
+                        "on-primary-fixed": "#002108",
+                        "outline-variant": "#bdcaba",
+                        "on-surface": "#1a1b1e",
+                        "tertiary-fixed-dim": "#ffba45",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f0f4",
+                        "surface-tint": "#006e2c",
+                        "on-primary-fixed-variant": "#005320",
+                        "on-tertiary-fixed": "#281800",
+                        "outline": "#6e7a6d",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3033",
+                        "secondary-container": "#fdcdbc",
+                        "on-secondary-container": "#795548",
+                        "secondary-fixed": "#ffdbcf",
+                        "primary-container": "#34a853",
+                        "on-background": "#1a1b1e",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#6ddd81",
+                        "primary-fixed": "#89fa9b",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efedf1",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#faf9fd",
+                        "surface-variant": "#e3e2e6",
+                        "surface-bright": "#faf9fd",
+                        "on-tertiary-container": "#3e2800",
+                        "on-tertiary-fixed-variant": "#614000",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#003511",
+                        "tertiary-container": "#c68700",
+                        "on-secondary-fixed": "#2e150b",
+                        "inverse-primary": "#6ddd81",
+                        "primary": "#006e2c",
+                        "surface-container-high": "#e9e7eb",
+                        "secondary-fixed-dim": "#ebbcac",
+                        "secondary": "#7a5649"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Lexend"],
+                        "label": ["Lexend"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+<meta name="theme-color" content="#006e2c"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="LEMBEM LAB — Open Science & Public-Benefit Research"/>
+<meta property="og:description" content="Open computational models, bio-informatics data and sustainable engineering solutions for communities in Vietnam."/>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{overflow-x:hidden}
+:focus-visible{outline:3px solid #34a853;outline-offset:4px}
+.skip-link{position:absolute;top:-100px;left:1rem;background:#fff;color:#006e2c;padding:1rem;z-index:100}
+.skip-link:focus{top:1rem}
+.hero-surface{background:linear-gradient(90deg,rgba(250,249,253,.99) 0%,rgba(250,249,253,.95) 48%,rgba(250,249,253,.35) 100%)}
+.research-grid{background-image:linear-gradient(rgba(0,110,44,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,110,44,.05) 1px,transparent 1px);background-size:36px 36px}
+.pill-card{transition:transform .25s,box-shadow .25s}
+.pill-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,60,30,.1)}
+.dialog-backdrop::backdrop{background:rgba(15,34,22,.64);backdrop-filter:blur(7px)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill-card{transition:none}}
+</style></head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="sticky top-0 z-50 bg-[#faf9fd]/95 backdrop-blur-xl border-b border-outline-variant/40 shadow-sm">
+  <nav class="max-w-7xl mx-auto px-5 md:px-8 h-[82px] flex items-center justify-between gap-5" aria-label="Primary navigation">
+    <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="LEMBEM LAB home">
+      <span class="flex items-center justify-center w-11 h-11 bg-primary text-white rounded-xl shadow-md shadow-primary/20"><span class="material-symbols-outlined text-[28px]" aria-hidden="true">science</span></span>
+      <span class="leading-tight"><strong class="block font-extrabold text-xl tracking-tight text-primary">LEMBEM <span class="text-on-surface">LAB</span></strong><span class="block text-[10px] sm:text-[11px] font-semibold text-on-surface-variant tracking-wide">Non-Profit Scientific Research</span></span>
+    </a>
+    <div class="hidden lg:flex items-center gap-5 xl:gap-7 text-[13px] font-semibold">
+      <a href="#about" class="text-on-surface-variant hover:text-primary transition-colors">About</a><a href="#pillars" class="text-on-surface-variant hover:text-primary transition-colors">Research Pillars</a><a href="#projects" class="text-on-surface-variant hover:text-primary transition-colors">Open Projects</a><a href="#governance" class="text-on-surface-variant hover:text-primary transition-colors">Governance</a><a href="#publications" class="text-on-surface-variant hover:text-primary transition-colors">Publications</a><a href="#contact" class="text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+    </div>
+    <div class="flex items-center gap-3"><a href="#support" class="hidden sm:inline-flex px-5 py-3 rounded-xl bg-primary text-white text-sm font-bold hover:bg-[#005320] transition-colors">Support / Donate</a><button id="nav-toggle" type="button" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-outline-variant/50 text-primary" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation"><span class="material-symbols-outlined " aria-hidden="true">menu</span></button></div>
+  </nav>
+  <div id="mobile-nav" class="hidden lg:hidden border-t border-outline-variant/30 bg-white px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col gap-4 text-sm font-semibold"><a href="#about" class="mobile-link hover:text-primary">About</a><a href="#pillars" class="mobile-link hover:text-primary">Research Pillars</a><a href="#projects" class="mobile-link hover:text-primary">Open Projects</a><a href="#governance" class="mobile-link hover:text-primary">Governance</a><a href="#publications" class="mobile-link hover:text-primary">Publications</a><a href="#contact" class="mobile-link hover:text-primary">Contact</a><a href="#support" class="mobile-link text-primary">Support / Donate →</a></div>
+  </div>
+</header>
+<main id="main">
+<section id="top" class="relative min-h-[690px] flex items-center py-24 lg:py-32 overflow-hidden">
+  <div class="absolute inset-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6a55PukUfKoO_Bed2iVUP89jjeLt_6C0vsFuFCKKL8q1Wgwjn206sacxqy6iupAdVBKxvc_lSURjspb93_hcfCJxMfwXSc73BZziSL3fvDJaBBd-oTMxd8VdmNZ5EQbOodoRJo2BdJMA9mXo4E5tC0dDa9OQIIfv7ZhuN94Z972zWNMlFDdjBkEScJFmN3loP4LCVPz1lkTmDErAb-ArmIasaSGku9Ab3fGr0QoiyyHerfx_utsgW9d371a8Oj5cKUOCopB1namyB" alt="Green terraced farms in Vietnam representing community and ecological research" class="w-full h-full object-cover" fetchpriority="high"/><div class="absolute inset-0 hero-surface"></div></div>
+  <div class="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-10">
+    <div class="max-w-[850px]">
+      <div class="inline-flex items-center gap-2 px-4 py-2 mb-7 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-[11px] sm:text-xs uppercase tracking-wider"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span> Registered Non-Profit Scientific &amp; Technological Organization</div>
+      <p class="text-primary font-bold tracking-[.23em] uppercase text-xs md:text-sm mb-5">Open science · Vietnam · Public benefit</p>
+      <h1 class="text-[clamp(2.5rem,5.35vw,5.3rem)] font-extrabold tracking-[-.055em] leading-[1.09] mb-7">Laboratory for <span class="text-primary">Emerging Media,</span> Bio-informatics and Engineering Models</h1>
+      <p class="text-lg md:text-xl leading-relaxed text-on-surface-variant max-w-3xl mb-10">Advancing open-source computational models, bio-informatics data, and sustainable engineering solutions for public benefit and academic communities in Vietnam.</p>
+      <div class="flex flex-wrap gap-4"><a href="#projects" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold text-sm md:text-base transition-all bg-primary text-white hover:bg-[#005320] shadow-lg shadow-primary/20">Explore Open Research <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_forward</span></a><a href="#governance" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold text-sm md:text-base transition-all bg-white/85 text-primary border border-primary/20 hover:border-primary/70">Non-Profit Charter & Governance <span class="material-symbols-outlined text-lg" aria-hidden="true">north_east</span></a></div>
+      <div class="mt-11 flex items-center gap-3 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary" aria-hidden="true">public</span> Research without paywalls. Technology for people.</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20 items-start mb-16">
+      <div><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">01 / About LEMBEM</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.12]">Our Mission &amp; <span class="text-primary">Public Benefit Mandate</span></h2></div>
+      <div><p class="text-on-surface-variant text-lg leading-[1.85]">Founded as an independent non-profit research initiative in Vietnam, LEMBEM bridges theoretical computation and real-world community challenges. Our mission is to develop and distribute free, open-access scientific models, datasets and technological tools for researchers, universities, farmers and underserved communities — without commercial barriers.</p><p class="mt-5 text-sm text-on-surface-variant">We prioritize transparent methodology, reproducibility, practical engineering and accessible knowledge dissemination.</p></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <article class="p-8 md:p-9 rounded-3xl bg-white border border-outline-variant/25"><div class="text-5xl font-extrabold text-primary mb-4">100%</div><h3 class="font-bold text-xl mb-3">Open-Access Commitment</h3><p class="text-on-surface-variant leading-relaxed text-sm">Research outputs are intended for public access, with Creative Commons licences for eligible publications and datasets and MIT licensing for eligible software.</p></article>
+      <article class="p-8 md:p-9 rounded-3xl bg-white border border-outline-variant/25"><div class="text-5xl font-extrabold text-primary mb-4">0%</div><h3 class="font-bold text-xl mb-3">Commercial Access Fees</h3><p class="text-on-surface-variant leading-relaxed text-sm">Our public-interest research model is designed around grants, donations and mission-aligned sponsorships rather than paywalled scientific access.</p></article>
+      <article class="p-8 md:p-9 rounded-3xl bg-white border border-outline-variant/25"><div class="text-5xl font-extrabold text-primary mb-4">03</div><h3 class="font-bold text-xl mb-3">Core Disciplines</h3><p class="text-on-surface-variant leading-relaxed text-sm">Emerging Media, Bio-informatics and Engineering Models — three complementary pillars connected by practical, open research.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="pillars" class="py-24 bg-surface">
+ <div class="max-w-7xl mx-auto px-6 md:px-8">
+  <div class="max-w-3xl mb-14"><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">02 / Fields of inquiry</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Three Core <span class="text-primary">Research Pillars</span></h2><p class="text-on-surface-variant text-lg">An interdisciplinary laboratory connecting digital media, life-science data and deployable engineering models.</p></div>
+  <div class="grid lg:grid-cols-3 gap-7">
+   <article class="pill-card rounded-[2rem] border border-outline-variant/30 bg-surface-container-lowest p-9"><div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary-fixed mb-9"><span class="material-symbols-outlined text-primary text-4xl" aria-hidden="true">hub</span></div><div class="text-xs font-bold tracking-wider text-primary uppercase mb-3">Pillar 01 · EM</div><h3 class="text-2xl font-extrabold leading-tight mb-5">Emerging Media &amp; Knowledge Dissemination</h3><p class="text-on-surface-variant leading-[1.8]">Developing open educational media, interactive scientific visualizations and digital archives to preserve cultural heritage and democratize scientific knowledge across Vietnam.</p><div class="mt-8 pt-6 border-t border-outline-variant/30 text-sm font-semibold text-primary">Scientific visualization · Digital heritage · Open education</div></article>
+   <article class="pill-card rounded-[2rem] border border-outline-variant/30 bg-surface-container-lowest p-9"><div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-secondary-fixed mb-9"><span class="material-symbols-outlined text-[#795548] text-4xl" aria-hidden="true">genetics</span></div><div class="text-xs font-bold tracking-wider text-primary uppercase mb-3">Pillar 02 · B</div><h3 class="text-2xl font-extrabold leading-tight mb-5">Bio-informatics &amp; Ecological Data</h3><p class="text-on-surface-variant leading-[1.8]">Analyzing agricultural genomics, biodiversity datasets and crop pathology models to support sustainable farming, transparent scientific collaboration and environmental conservation.</p><div class="mt-8 pt-6 border-t border-outline-variant/30 text-sm font-semibold text-primary">Biodiversity · Crop health · Ecological informatics</div></article>
+   <article class="pill-card rounded-[2rem] border border-outline-variant/30 bg-surface-container-lowest p-9"><div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-tertiary-fixed mb-9"><span class="material-symbols-outlined text-tertiary text-4xl" aria-hidden="true">developer_board</span></div><div class="text-xs font-bold tracking-wider text-primary uppercase mb-3">Pillar 03 · EM</div><h3 class="text-2xl font-extrabold leading-tight mb-5">Engineering Models &amp; Open AI</h3><p class="text-on-surface-variant leading-[1.8]">Building lightweight machine-learning models, IoT sensor workflows and environmental forecasting algorithms designed for resource-constrained rural communities.</p><div class="mt-8 pt-6 border-t border-outline-variant/30 text-sm font-semibold text-primary">Applied AI · IoT · Environmental modelling</div></article>
+  </div>
+ </div>
+</section>
+
+<section id="projects" class="py-24 bg-surface-container-low research-grid">
+ <div class="max-w-7xl mx-auto px-6 md:px-8">
+  <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12"><div class="max-w-3xl"><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">03 / Open initiatives</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-5">Featured Research &amp; <span class="text-primary">Community Initiatives</span></h2><p class="text-on-surface-variant text-lg">Research projects and development directions designed to produce reusable tools, methods and public knowledge.</p></div><a href="https://github.com/yanghoxom" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-bold text-primary whitespace-nowrap hover:underline">Explore GitHub <span class="material-symbols-outlined " aria-hidden="true">north_east</span></a></div>
+  <div class="grid lg:grid-cols-3 gap-7">
+    <article class="bg-white rounded-[2rem] overflow-hidden border border-outline-variant/25 flex flex-col shadow-sm">
+      <div class="p-8 bg-primary text-white min-h-40 flex flex-col justify-between"><div class="text-white/75 text-xs uppercase tracking-[.2em] font-bold">Flagship · Smart Agriculture</div><span class="material-symbols-outlined text-[70px] opacity-80 self-end" aria-hidden="true">agriculture</span></div>
+      <div class="p-8 flex flex-col flex-1"><div class="text-xs text-primary font-bold mb-3">Bio-informatics &amp; Smart Agriculture</div><h3 class="text-2xl font-extrabold mb-4">AgriSense Open Initiative</h3><p class="text-on-surface-variant leading-relaxed flex-1">A public-interest research direction exploring IoT sensor models, bio-informatics data and AI-assisted workflows that could help Vietnamese farmers monitor soil conditions, micro-climate variability and crop health. The connected AgriSense platform describes an early-stage concept and validation roadmap.</p><div class="my-7"><span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-primary/10 text-primary">Concept &amp; prototype research</span></div><a class="inline-flex gap-2 items-center text-primary font-bold hover:underline" href="https://agrisense.lembem.com" target="_blank" rel="noopener noreferrer">Visit AgriSense <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_outward</span></a></div>
+    </article>
+    <article class="bg-white rounded-[2rem] overflow-hidden border border-outline-variant/25 flex flex-col shadow-sm">
+      <div class="p-8 bg-[#dcebe1] text-primary min-h-40 flex flex-col justify-between"><div class="text-primary/70 text-xs uppercase tracking-[.2em] font-bold">Open Knowledge Infrastructure</div><span class="material-symbols-outlined text-[70px] opacity-80 self-end" aria-hidden="true">dataset</span></div>
+      <div class="p-8 flex flex-col flex-1"><div class="text-xs text-primary font-bold mb-3">Open Scientific Data</div><h3 class="text-2xl font-extrabold mb-4">VietBioNet Dataset</h3><p class="text-on-surface-variant leading-relaxed flex-1">A proposed curated, open-access collection of indigenous flora records and agricultural bio-markers from Northern Vietnam, designed to support student research, independent analysis and reproducible ecological studies.</p><div class="my-7"><span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-surface-container-low text-on-surface-variant">Proposed · CC BY 4.0 target</span></div><a href="mailto:contact@lembem.com?subject=VietBioNet%20research%20enquiry" class="inline-flex gap-2 items-center text-primary font-bold hover:underline">Enquire about dataset <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_outward</span></a></div>
+    </article>
+    <article class="bg-white rounded-[2rem] overflow-hidden border border-outline-variant/25 flex flex-col shadow-sm">
+      <div class="p-8 bg-[#e9e3d5] text-[#805600] min-h-40 flex flex-col justify-between"><div class="text-[#805600]/70 text-xs uppercase tracking-[.2em] font-bold">Sustainable Engineering</div><span class="material-symbols-outlined text-[70px] opacity-80 self-end" aria-hidden="true">water</span></div>
+      <div class="p-8 flex flex-col flex-1"><div class="text-xs text-primary font-bold mb-3">Engineering Models</div><h3 class="text-2xl font-extrabold mb-4">EcoModel-VN</h3><p class="text-on-surface-variant leading-relaxed flex-1">An open-source research concept for lightweight water-quality monitoring and flood-risk simulations in rural river basins, with a focus on reproducibility and lower-cost field instrumentation.</p><div class="my-7"><span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-surface-container-low text-on-surface-variant">Planned open-source repository</span></div><a href="mailto:contact@lembem.com?subject=EcoModel-VN%20collaboration" class="inline-flex gap-2 items-center text-primary font-bold hover:underline">Discuss collaboration <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_outward</span></a></div>
+    </article>
+  </div>
+ </div>
+</section>
+
+<section id="governance" class="py-24 bg-surface">
+ <div class="max-w-7xl mx-auto px-6 md:px-8">
+  <div class="max-w-4xl mb-14"><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">04 / Accountability</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-5">Governance, Legal Status &amp; <span class="text-primary">Non-Profit Compliance</span></h2><p class="text-on-surface-variant text-lg">Transparency and responsible stewardship are part of the laboratory's operating principles. Registration identifiers and governing appointments are disclosed only when confirmed.</p></div>
+  <div class="grid lg:grid-cols-2 gap-7">
+   <article class="rounded-[2rem] bg-surface-container-low p-8 md:p-10 border border-outline-variant/25"><div class="flex items-center gap-3 mb-8"><span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">assured_workload</span><h3 class="text-2xl font-bold">Institutional Profile</h3></div><dl class="space-y-5 text-sm">
+    <div><dt class="uppercase tracking-wide text-on-surface-variant text-xs font-bold mb-2">English name</dt><dd class="font-semibold">Laboratory for Emerging Media, Bio-informatics and Engineering Models (LEMBEM)</dd></div>
+    <div><dt class="uppercase tracking-wide text-on-surface-variant text-xs font-bold mb-2">Vietnamese name</dt><dd class="font-semibold">Viện Nghiên cứu Mô hình Kỹ thuật, Tin sinh học và Truyền thông Mới (LEMBEM)</dd></div>
+    <div><dt class="uppercase tracking-wide text-on-surface-variant text-xs font-bold mb-2">Organization category</dt><dd class="font-semibold">Non-Profit Scientific &amp; Technological Organization</dd></div>
+    <div><dt class="uppercase tracking-wide text-on-surface-variant text-xs font-bold mb-2">Registration / Tax ID</dt><dd class="font-semibold text-on-surface-variant">Not yet published</dd></div>
+    <div><dt class="uppercase tracking-wide text-on-surface-variant text-xs font-bold mb-2">Registered headquarters</dt><dd class="font-semibold text-on-surface-variant">Vietnam · official address pending publication</dd></div>
+   </dl></article>
+   <article class="rounded-[2rem] bg-primary text-white p-8 md:p-10 relative overflow-hidden"><div class="relative z-10"><div class="flex items-center gap-3 mb-8"><span class="material-symbols-outlined text-white text-3xl" aria-hidden="true">volunteer_activism</span><h3 class="text-2xl font-bold">Non-Distribution Commitment</h3></div><p class="text-lg leading-[1.85] text-white/90">LEMBEM's stated operating mandate is scientific, educational and public-benefit research. Under its non-distribution principle, surplus funds, grants and donations are directed toward research infrastructure, open-source community projects and scientific education — not private shareholder dividends.</p><p class="mt-8 text-sm text-white/75">This public commitment does not replace a legally filed charter or registration record.</p></div><div class="absolute -right-28 -bottom-28 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div></article>
+  </div>
+  <div class="mt-8 p-8 md:p-10 rounded-[2rem] bg-white border border-outline-variant/30">
+   <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><h3 class="text-2xl md:text-3xl font-bold">Research Leadership &amp; Stewardship</h3><span class="text-sm text-on-surface-variant">Based on publicly described AgriSense contributors; not a verified statutory board roster</span></div>
+   <div class="grid md:grid-cols-3 gap-5">
+     <div class="p-6 bg-surface-container-low rounded-2xl"><div class="text-sm text-primary font-bold mb-2">Founding Technology</div><div class="text-xl font-bold mb-1">Hung Dao</div><div class="text-sm text-on-surface-variant">Founder &amp; Engineering Lead</div></div>
+     <div class="p-6 bg-surface-container-low rounded-2xl"><div class="text-sm text-primary font-bold mb-2">Agricultural Research</div><div class="text-xl font-bold mb-1">Phung Ha</div><div class="text-sm text-on-surface-variant">Research Contributor</div></div>
+     <div class="p-6 bg-surface-container-low rounded-2xl"><div class="text-sm text-primary font-bold mb-2">Legal &amp; Secretariat</div><div class="text-xl font-bold mb-1">Appointment pending</div><div class="text-sm text-on-surface-variant">Authorized representative to be disclosed</div></div>
+   </div>
+   <div class="mt-7 flex flex-wrap gap-4"><a href="governance.html" class="inline-flex items-center gap-2 font-bold text-primary hover:underline">Read governance &amp; transparency statement <span class="material-symbols-outlined " aria-hidden="true">arrow_outward</span></a><a href="mailto:contact@lembem.com?subject=Institutional%20registration%20enquiry" class="inline-flex items-center gap-2 font-bold text-primary hover:underline">Request institutional details <span class="material-symbols-outlined " aria-hidden="true">mail</span></a></div>
+  </div>
+ </div>
+</section>
+
+<section id="publications" class="py-24 bg-surface-container-low">
+ <div class="max-w-7xl mx-auto px-6 md:px-8">
+  <div class="max-w-4xl mb-12"><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">05 / Knowledge commons</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-5">Publications &amp; <span class="text-primary">Open Resources</span></h2><p class="text-on-surface-variant text-lg">A home for research notes, reference implementations, working papers and datasets as they become available. We distinguish released material from initiatives still under development.</p></div>
+  <div class="grid md:grid-cols-3 gap-6">
+   <article class="bg-white rounded-3xl p-8 border border-outline-variant/25"><span class="material-symbols-outlined text-4xl text-primary mb-6" aria-hidden="true">menu_book</span><h3 class="text-xl font-bold mb-3">Working Papers</h3><p class="text-on-surface-variant text-sm leading-relaxed mb-5">Methodologies, experiments and reproducible findings, to be listed with dates and citations when published.</p><span class="text-xs font-bold uppercase tracking-wider text-primary">Publication register in preparation</span></article>
+   <article class="bg-white rounded-3xl p-8 border border-outline-variant/25"><span class="material-symbols-outlined text-4xl text-primary mb-6" aria-hidden="true">terminal</span><h3 class="text-xl font-bold mb-3">Open Code</h3><p class="text-on-surface-variant text-sm leading-relaxed mb-5">Source repositories and reference implementations for applied computational and agricultural research.</p><a href="https://github.com/yanghoxom" target="_blank" rel="noopener noreferrer" class="text-primary text-sm font-bold hover:underline">Browse related GitHub repositories →</a></article>
+   <article class="bg-white rounded-3xl p-8 border border-outline-variant/25"><span class="material-symbols-outlined text-4xl text-primary mb-6" aria-hidden="true">database</span><h3 class="text-xl font-bold mb-3">Open Datasets</h3><p class="text-on-surface-variant text-sm leading-relaxed mb-5">Planned catalogue of ecological and bio-informatics datasets with provenance, documentation and project-specific licensing.</p><a href="mailto:contact@lembem.com?subject=Open%20dataset%20enquiry" class="text-primary text-sm font-bold hover:underline">Request updates →</a></article>
+  </div>
+  <p class="mt-8 text-sm text-on-surface-variant">Licences are applied per released asset: for example, MIT for software and CC BY 4.0 for eligible research data; website text is separately licensed as indicated in the footer.</p>
+ </div>
+</section>
+
+<section id="support" class="relative py-24 overflow-hidden bg-primary text-white"><div class="absolute inset-0 opacity-[.07] research-grid"></div><div class="max-w-5xl mx-auto px-6 md:px-8 text-center relative">
+<p class="text-xs uppercase tracking-[.25em] font-bold text-white/75 mb-5">06 / Collaboration & grants</p>
+<h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">Support Open Science <span class="text-primary-fixed">in Vietnam</span></h2>
+<p class="text-lg md:text-xl leading-relaxed text-white/85 max-w-3xl mx-auto mb-10">Our public-benefit research model relies on institutional grants, cloud credits, technical partnerships and community contributions. Help keep scientific tools, methods and educational resources accessible to everyone.</p>
+<div class="flex flex-wrap justify-center gap-4"><button type="button" data-dialog="support-dialog" class="px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-primary-fixed transition-colors">Become a Grant Partner</button><button type="button" data-dialog="support-dialog" class="px-8 py-4 bg-white/10 border border-white/50 text-white font-bold rounded-xl hover:bg-white/20 transition-colors">Donate via Bank Transfer</button></div>
+<p class="mt-7 text-sm text-white/70">No payment information is requested on this website. Contact the team to confirm any official donation instructions.</p></div></section>
+<section id="contact" class="py-24 bg-surface">
+ <div class="max-w-7xl mx-auto px-6 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+  <div><p class="text-xs uppercase tracking-[.25em] text-primary font-bold mb-5">07 / Contact</p><h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Connect With <span class="text-primary">LEMBEM LAB</span></h2><p class="text-on-surface-variant text-lg leading-relaxed">For open research, academic partnerships, grant enquiries, collaboration or requests for institutional documents, contact our team directly.</p></div>
+  <div class="p-9 rounded-[2rem] bg-surface-container-low border border-outline-variant/30"><p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-3">Official contact channel</p><a href="mailto:contact@lembem.com" class="text-xl md:text-3xl text-primary font-extrabold break-all hover:underline">contact@lembem.com</a><p class="mt-6 text-on-surface-variant">Vietnam · Remote-first research collaborations</p><div class="mt-7 flex gap-4 flex-wrap"><a href="mailto:contact@lembem.com?subject=Research%20collaboration" class="inline-flex items-center gap-2 font-bold text-primary hover:underline"><span class="material-symbols-outlined " aria-hidden="true">mail</span> Write to the lab</a><a href="https://agrisense.lembem.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-bold text-primary hover:underline"><span class="material-symbols-outlined " aria-hidden="true">north_east</span> View AgriSense</a></div></div>
+ </div>
+</section>
+</main>
+<footer class="bg-[#eef1ed] border-t border-outline-variant/30 pt-16 pb-8">
+ <div class="max-w-7xl mx-auto px-6 md:px-8 grid lg:grid-cols-[1.6fr_1fr_1fr] gap-10 pb-12">
+  <div><a href="#top" class="font-extrabold text-2xl tracking-tight text-primary">LEMBEM <span class="text-on-surface">LAB</span></a><p class="font-semibold mt-4 max-w-md">Laboratory for Emerging Media, Bio-informatics and Engineering Models</p><p class="text-sm text-on-surface-variant mt-2 max-w-md">Viện Nghiên cứu Mô hình Kỹ thuật, Tin sinh học và Truyền thông Mới</p><p class="text-sm text-on-surface-variant mt-4">Vietnam · Registered address and official registration ID pending publication</p></div>
+  <div><h3 class="font-bold mb-5">Quick Links</h3><div class="grid grid-cols-2 gap-3 text-sm text-on-surface-variant"><a class="hover:text-primary" href="#about">Mission</a><a class="hover:text-primary" href="#pillars">Research</a><a class="hover:text-primary" href="#projects">Projects</a><a class="hover:text-primary" href="#governance">Governance</a><a class="hover:text-primary" href="governance.html">Charter &amp; Transparency</a><a class="hover:text-primary" href="#publications">Publications</a><a class="hover:text-primary" href="privacy.html">Privacy Policy</a><a class="hover:text-primary" href="terms.html">Terms of Non-Profit Use</a></div></div>
+  <div><h3 class="font-bold mb-5">Get in touch</h3><a href="mailto:contact@lembem.com" class="font-semibold text-primary hover:underline">contact@lembem.com</a><p class="text-sm text-on-surface-variant mt-4">Collaboration · Research · Grants</p></div>
+ </div>
+ <div class="max-w-7xl mx-auto px-6 md:px-8 border-t border-outline-variant/35 pt-7 text-xs leading-relaxed text-on-surface-variant">© 2026 LEMBEM (Laboratory for Emerging Media, Bio-informatics and Engineering Models). Non-profit scientific &amp; technological research initiative in Vietnam. Website content licensed under Creative Commons CC BY-NC 4.0 unless otherwise noted. Registration particulars will be published when verified.</div>
+</footer>
+<dialog id="support-dialog" class="dialog-backdrop w-[calc(100%-2rem)] max-w-lg rounded-3xl p-0 shadow-2xl border-0">
+ <div class="p-8 md:p-10"><div class="flex justify-between items-start gap-5"><div><p class="text-primary text-xs font-bold uppercase tracking-wider mb-3">Grants &amp; Community Support</p><h2 class="text-2xl md:text-3xl font-extrabold">Partner with LEMBEM</h2></div><button type="button" data-close-dialog class="rounded-full bg-surface-container-low w-10 h-10 shrink-0 flex items-center justify-center" aria-label="Close dialog"><span class="material-symbols-outlined " aria-hidden="true">close</span></button></div>
+ <p class="text-on-surface-variant leading-relaxed my-7">To discuss grant partnerships, cloud credits or a bank-transfer contribution, please reach out by email. Official account details are supplied only after confirmation with the organization.</p><a href="mailto:contact@lembem.com?subject=LEMBEM%20Grant%20or%20Donation%20Enquiry" class="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-primary text-white font-bold hover:bg-[#005320]"><span class="material-symbols-outlined " aria-hidden="true">mail</span> contact@lembem.com</a></div>
+</dialog>
+<script>
+(function(){
+ const button=document.getElementById('nav-toggle');
+ const mobile=document.getElementById('mobile-nav');
+ button?.addEventListener('click',()=>{const opened=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!opened));mobile.classList.toggle('hidden',opened);});
+ mobile?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobile.classList.add('hidden');button.setAttribute('aria-expanded','false');}));
+ const dialog=document.getElementById('support-dialog');
+ document.querySelectorAll('[data-dialog="support-dialog"]').forEach(b=>b.addEventListener('click',()=>dialog.showModal()));
+ document.querySelectorAll('[data-close-dialog]').forEach(b=>b.addEventListener('click',()=>dialog.close()));
+ dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+})();
+</script>
+</body>
+</html>
