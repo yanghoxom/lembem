@@ -53,11 +53,3 @@ The site is already configured for GitHub Pages from `main` and uses the custom 
 ## Licensing and third-party assets
 
 Original website text is designated CC BY-NC 4.0 unless otherwise noted. VietBioNet is designated CC BY-NC 4.0. EcoModel-VN remains private; its licence will be announced on release. These terms do **not** automatically extend to third-party images, fonts, logos, or source code that may be governed by different rights. The hero background and logo have been retained from the site's current design.
-
-## VietBioNet access request form
-
-The request form sends submitted name, email, optional institution and research purpose to `https://formsubmit.co/ajax/contact@lembem.com`, using JSON POST and a same-page confirmation modal. The modal opens **only** if the provider returns `success: true` or `success: "true"`; FormSubmit can respond with `success: "false"` even on HTTP 200. Failed/activation-pending submissions show an error instead of claiming successful delivery.
-
-**Important one-time setup:** FormSubmit requires the owner of `contact@lembem.com` to activate the destination email by clicking the verification link sent by FormSubmit when the first request is submitted. Until activation, delivery is not confirmed and the UI offers direct email contact. This has not been activated or test-submitted by the site editor. See [FormSubmit's documentation](https://formsubmit.co/documentation).
-
-The form's collected personal information is described in `privacy.html`. FormSubmit is an external processor; website visitors must tick a consent checkbox. The form has a honeypot field for spam prevention. To replace FormSubmit with an in-house API or an existing organization endpoint, update the `action` URL in `datasets/vietbionet/index.html`.
