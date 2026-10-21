@@ -13,7 +13,7 @@ The legal and team details below were provided by the repository owner for publi
 - **English name:** Laboratory for Emerging Media, Bio-informatics and Engineering Models (LEMBEM)
 - **Vietnamese name:** Viện Nghiên cứu Mô hình Kỹ thuật, Tin sinh học và Truyền thông Mới
 - **Status:** Registered Non-Profit Scientific and Technological Organization (Tổ chức Khoa học và Công nghệ ngoài công lập / Phi lợi nhuận)
-- **Registration:** A-2836 / ĐK-KHCN
+- **Registration:** 254/QĐ-SKHCN
 - **Tax ID:** 2301284126
 - **Founded:** 2025-05-15
 - **Headquarters:** Chi Lang Commune, Bac Ninh Province, Vietnam
