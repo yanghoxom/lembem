@@ -18,7 +18,7 @@ The legal and team details below were provided by the repository owner for publi
 - **Founded:** 2025-05-15
 - **Headquarters:** Chi Lang Commune, Bac Ninh Province, Vietnam
 - **Legal representative:** Dao Van Hung (Hung Dao), Director of Research & Legal Representative
-- **Email:** contact@lembem.com
+- **Email:** contact@lab.lembem.com
 
 ## Research team
 

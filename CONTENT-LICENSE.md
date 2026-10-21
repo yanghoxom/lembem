@@ -16,4 +16,4 @@ This declaration covers original website editorial content. It does not automati
 
 The **VietBioNet** dataset is designated **CC BY-NC 4.0**. **EcoModel-VN** is currently a private project in development, and no public software release or current redistribution licence is advertised.
 
-For licensing questions contact **contact@lembem.com**.
+For licensing questions contact **contact@lab.lembem.com**.
